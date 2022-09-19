@@ -6,7 +6,8 @@ class App extends React.Component
     super();
     this.state={
       nom:'Khalil',
-      prenom:'lakhdhar'
+      prenom:'lakhdhar',
+      clicks:0
     }
   }
     render()
@@ -14,6 +15,8 @@ class App extends React.Component
       return(
         <div>
 Bienvenu {this.state.nom} {this.state.prenom}
+<br></br>
+{this.state.clicks}
         </div>
       )
     }
